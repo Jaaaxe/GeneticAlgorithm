@@ -50,7 +50,7 @@ public class MainProgram {
     public static void RunDataset2() throws Exception {
 
         var ds2_sim = new GeneticAlgorithmLogic.Simulation(32, 6, new File("dataset_2.csv"), 100);
-        ds2_sim.Run(30000, DataQuery.ReadDataset2File("data2.txt"));
+        ds2_sim.Run(3000, DataQuery.ReadDataset2File("data2.txt"));
         System.out.println("Best Candidate For Dataset 2 : " + ds2_sim.BestCandidate.GetGeneString());
     }
 
