@@ -3,6 +3,11 @@ package GeneticAlgoritm;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class creates a list of objects of generic type T and allows each item to be assigned a weight.
+ * The weight will then be taken into account when picking a random item from the list
+ */
+
 public class Roulette<T> {
     private class WeightedEntry {
         public double Weight;
