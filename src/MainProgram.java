@@ -6,38 +6,37 @@ import java.util.Scanner;
 
 public class MainProgram {
     public static void main(String[] args) throws Exception {
-//
-//        Scanner scan = new Scanner(System.in);
-//
-//        System.out.println("CLASSIFICATION WITH THE USE OF GENETIC ALGORITHMS");
-//        System.out.println("PLEASE CHOOSE AN OPTION BY TYPING THE NUMBER");
-//        System.out.println("1. RUN DATASET ONE");
-//        System.out.println("2. RUN DATASET TWO");
-//        System.out.println("3. RUN DATASET THREE");
-//        System.out.println("4. RUN HIDDEN LAYER & NODE CHECK FOR SET 3");
-//        System.out.println("5. EXIT");
-//
-//        Boolean sim = true;
-//
-//        while(sim){
-//            int ans = scan.nextInt();
-//            switch(ans){
-//                case 1: RunDataset1();
-//                    break;
-//                case 2: RunDataset2();
-//                    break;
-//                case 3: RunDataset3();
-//                    break;
-//                case 4: HiddenLayerAndNodeCheck();
-//                    break;
-//                case 5: sim = false;
-//                    break;
-//            }
-//
-//        }
-//        System.out.println("TERMINATED");
-//        scan.close();
-        RunDataset3();
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("CLASSIFICATION WITH THE USE OF GENETIC ALGORITHMS");
+        System.out.println("PLEASE CHOOSE AN OPTION BY TYPING THE NUMBER");
+        System.out.println("1. RUN DATASET ONE");
+        System.out.println("2. RUN DATASET TWO");
+        System.out.println("3. RUN DATASET THREE");
+        System.out.println("4. RUN HIDDEN LAYER & NODE CHECK FOR SET 3");
+        System.out.println("5. EXIT");
+
+        Boolean sim = true;
+
+        while(sim){
+            int ans = scan.nextInt();
+            switch(ans){
+                case 1: RunDataset1();
+                    break;
+                case 2: RunDataset2();
+                    break;
+                case 3: RunDataset3();
+                    break;
+                case 4: HiddenLayerAndNodeCheck();
+                    break;
+                case 5: sim = false;
+                    break;
+            }
+
+        }
+        System.out.println("APPLICATION TERMINATED");
+        scan.close();
 
     }
 
