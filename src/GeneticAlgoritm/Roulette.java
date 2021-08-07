@@ -3,7 +3,6 @@ package GeneticAlgoritm;
 import java.util.ArrayList;
 import java.util.List;
 
-// This function is just a java recreation of this : https://stackoverflow.com/a/46584577
 public class Roulette<T> {
     private class WeightedEntry {
         public double Weight;

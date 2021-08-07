@@ -40,6 +40,7 @@ public class MainProgram {
 
     }
 
+    // Change the parameters such as population size and iterations here
     public static void RunDataset1() throws Exception {
         var ds1_sim = new GeneticAlgorithmLogic.Simulation(16, 5, new File("dataset_1.csv"), 5);
         ds1_sim.Run(3000, DataQuery.ReadDataset1File("data1.txt"));
@@ -62,6 +63,8 @@ public class MainProgram {
         System.out.println("Best candidate testing score : " + best_Score);
     }
 
+    // This will loop through all combinations of hidden layers and nodes per layer
+    // It was used to help determine the best combination
     public static void HiddenLayerAndNodeCheck() throws Exception {
         var averageCount = 3;
 
